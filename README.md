@@ -2,4 +2,4 @@
 
 Made by Gonzalo G with my mentor Ricky P at [Bloc](http://bloc.io)
 
-[gonzalo-bloccit.git](https://git.heroku.com/gonzalo-bloccit.git) at Heroku
+[gonzalo-bloccit.git](https://gonzalo-bloccit.herokuapp.com/) at Heroku
