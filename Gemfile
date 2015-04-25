@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
 
+gem 'bootstrap-sass'
 
 group :production do
   gem 'pg'
