@@ -17,6 +17,16 @@ posts = Post.all
   )
 end
 
+# Post.create!(
+#   title: "The Most Unique Post Title",
+#   body: "More unique than Niki Minaj's body."
+# )
+
+# Comment.create!(
+#   post: post,
+#   body: ""
+# )
+
 puts "Seed finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
