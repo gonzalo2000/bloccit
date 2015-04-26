@@ -17,10 +17,7 @@ posts = Post.all
   )
 end
 
-# Post.create!(
-#   title: "The Most Unique Post Title",
-#   body: "More unique than Niki Minaj's body."
-# )
+ #Post.create!(title: "New Post Title", body: "More unique still.")
 
 # Comment.create!(
 #   post: post,
