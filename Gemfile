@@ -7,6 +7,9 @@ gem 'rails', '4.2.1'
 
 gem 'bootstrap-sass'
 
+gem 'pry-rails'
+
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
