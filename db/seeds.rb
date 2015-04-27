@@ -17,13 +17,16 @@ posts = Post.all
    )
  end
 
-if Post.where("title = 'This newer title'") == []
-  post_custom = Post.create!(title: "This newer title", body: "More unique still.")  
-end
+ post = Post.find_or_create_by(title: "This newer title")
+ Comment.find_or_create_by(post: post, body: "like Nicki Minaj")
 
-if Comment.where("body = 'Like Nicki Minaj'") == []
-  Comment.create!(post: post_custom, body: "Like Nicki Minaj")
-end
+# if Post.where("title = 'This newer title'") == []
+#   post_custom = Post.create!(title: "This newer title", body: "More unique still.")  
+# end
+
+# if Comment.where("body = 'Like Nicki Minaj'") == []
+#   Comment.create!(post: post_custom, body: "Like Nicki Minaj")
+# end
 
 puts "Seed finished"
 puts "#{Post.count} posts created"
