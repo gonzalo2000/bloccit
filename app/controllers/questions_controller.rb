@@ -41,6 +41,6 @@ class QuestionsController < ApplicationController
     @question = Question.find(params[:id])
     @question.destroy
     redirect_to questions_path
-    flash[:error] = "The question has been deleted."
+    flash[:notice] = "The question has been deleted."
   end
 end
