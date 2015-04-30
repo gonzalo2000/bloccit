@@ -23,6 +23,11 @@
         <%= f.submit "Save", class: 'btn btn-success' %>
         <%= link_to "Delete", @question, method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-success' %>
       </div>
+      <div>
+      
+      <%= f.check_box :resolved %>
+      <%= f.label :resolved, "Resolved question?" .html_safe, {class: "checkbox inline"} %>
+
     <% end %>
   </div>
 
