@@ -1,4 +1,11 @@
 class PostsController < ApplicationController
+  before_action :flash_attack
+  skip_before_action :flash_attack, only: [:index, :new]
+  
+  # def flash_attack
+  #   flash[:notice] = "You are viewing post-related materials"
+  # end
+
   def index
     @posts = Post.all
   end

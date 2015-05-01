@@ -2,6 +2,12 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :configure_permitted_parameters, if: :devise_controller?
+
+  before_action :flash_attack
+
+  def flash_attack
+    flash[:notice] = "You are viewing this flash attack"
+  end
  
    protected
  
